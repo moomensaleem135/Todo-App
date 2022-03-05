@@ -6,15 +6,13 @@
 
 ### Run
 
-#### Pre-req:
-Should have mongodb running in local and have a DB with name todo-app-db
-
-`mongodb://localhost:27017/todo-app-db`
-
 Then run command
 
 `npm run start`
 
+### Open Link
+
+http://localhost:3000/graphql
 
 ### Graphql Playground
 
