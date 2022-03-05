@@ -8,8 +8,6 @@ import { AuthModule } from './user/user.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
-// mongosh "mongodb+srv://todo.fwehs.mongodb.net/todo-app-db" --apiVersion 1 --username abdulrehman
-
 @Module({
   imports: [
     MongooseModule.forRoot(
