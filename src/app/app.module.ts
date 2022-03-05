@@ -8,9 +8,13 @@ import { AuthModule } from './user/user.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
+// mongosh "mongodb+srv://todo.fwehs.mongodb.net/todo-app-db" --apiVersion 1 --username abdulrehman
+
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/todo-app-db'),
+    MongooseModule.forRoot(
+      'mongodb+srv://abdulrehman:alrehman135@todo.fwehs.mongodb.net/todo-app-db',
+    ),
     GraphQLModule.forRoot({
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       sortSchema: true,
